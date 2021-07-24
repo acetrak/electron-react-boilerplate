@@ -1,7 +1,61 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+/*html,*/
+/*body {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+
+html, body {
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100vh;
 }
 
+img {
+  -webkit-user-drag: none;
+}
 
+.rootStyle{
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 128px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, 0.8);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144, 147, 153, 0.8);
+}
+
+.nowrap3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nowrap2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nowrap1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
